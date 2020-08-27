@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sportReuseId" rowHeight="133" id="KGk-i7-Jjw" customClass="SportsTableViewCell" customModule="Sports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-2s-fyL" userLabel="Container View">
+                        <rect key="frame" x="10" y="7" width="304" height="112"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tLR-DO-Xvz">
+                                <rect key="frame" x="20" y="8" width="274" height="96"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jXs-1r-2G3">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="96" id="MhF-W3-V9S"/>
+                                            <constraint firstAttribute="height" constant="96" id="cF3-S0-8v4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Вид спорта" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFV-by-1qT">
+                                        <rect key="frame" x="114" y="0.0" width="160" height="96"/>
+                                        <fontDescription key="fontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nFV-by-1qT" firstAttribute="top" secondItem="tLR-DO-Xvz" secondAttribute="top" id="Akc-AT-gHP"/>
+                                    <constraint firstAttribute="bottom" secondItem="jXs-1r-2G3" secondAttribute="bottom" id="CUX-I1-3Hm"/>
+                                    <constraint firstAttribute="trailing" secondItem="nFV-by-1qT" secondAttribute="trailing" id="F3X-hk-je7"/>
+                                    <constraint firstItem="jXs-1r-2G3" firstAttribute="leading" secondItem="tLR-DO-Xvz" secondAttribute="leading" id="Nie-Kr-OpQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="nFV-by-1qT" secondAttribute="bottom" id="Nvg-El-RPE"/>
+                                    <constraint firstItem="jXs-1r-2G3" firstAttribute="top" secondItem="tLR-DO-Xvz" secondAttribute="top" id="VBZ-lz-dBO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tLR-DO-Xvz" secondAttribute="trailing" constant="10" id="GsD-tW-aSa"/>
+                            <constraint firstAttribute="bottom" secondItem="tLR-DO-Xvz" secondAttribute="bottom" constant="8" id="bn7-Vm-jMy"/>
+                            <constraint firstItem="tLR-DO-Xvz" firstAttribute="leading" secondItem="KJk-2s-fyL" secondAttribute="leading" constant="20" id="fYi-MZ-Pdt"/>
+                            <constraint firstItem="tLR-DO-Xvz" firstAttribute="top" secondItem="KJk-2s-fyL" secondAttribute="top" constant="8" id="uoJ-Ga-3cf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KJk-2s-fyL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="a43-f9-Ahi"/>
+                    <constraint firstItem="KJk-2s-fyL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bVX-jh-Hpb"/>
+                    <constraint firstAttribute="bottom" secondItem="KJk-2s-fyL" secondAttribute="bottom" constant="7" id="buK-hn-qIN"/>
+                    <constraint firstAttribute="trailing" secondItem="KJk-2s-fyL" secondAttribute="trailing" constant="10" id="wek-n6-Vbg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="KJk-2s-fyL" id="9Ee-sD-b4c"/>
+                <outlet property="sportImageView" destination="jXs-1r-2G3" id="iHI-IM-LUx"/>
+                <outlet property="sportLabel" destination="nFV-by-1qT" id="kJ8-Xd-hBM"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="133.59375"/>
+        </tableViewCell>
+    </objects>
+</document>

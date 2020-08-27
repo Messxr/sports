@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tournamentsReuseId" rowHeight="153" id="KGk-i7-Jjw" customClass="TournamentTableViewCell" customModule="Sports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoi-r2-y1g" userLabel="Container View">
+                        <rect key="frame" x="10" y="7" width="313" height="128"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hXW-hO-aBt">
+                                <rect key="frame" x="10" y="10" width="293" height="108"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-f0-cX8">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hN1-JH-ACb">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="FSM-ZO-92d"/>
+                                                    <constraint firstAttribute="height" constant="40" id="HQp-MI-VSu"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Лига" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik8-sH-2En" userLabel="Соревнование">
+                                                <rect key="frame" x="52" y="0.0" width="241" height="50"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Участники" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAj-M4-bB0" userLabel="Участники">
+                                        <rect key="frame" x="0.0" y="50" width="293" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="Mlj-gv-RCg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j48-Hz-5BR" userLabel="Дата">
+                                        <rect key="frame" x="0.0" y="76" width="293" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="aHU-MT-kTC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hXW-hO-aBt" secondAttribute="trailing" constant="10" id="8Tg-w5-CbW"/>
+                            <constraint firstAttribute="bottom" secondItem="hXW-hO-aBt" secondAttribute="bottom" constant="10" id="Jwd-ZT-AQn"/>
+                            <constraint firstItem="hXW-hO-aBt" firstAttribute="leading" secondItem="zoi-r2-y1g" secondAttribute="leading" constant="10" id="Z93-Ea-gf2"/>
+                            <constraint firstItem="hXW-hO-aBt" firstAttribute="top" secondItem="zoi-r2-y1g" secondAttribute="top" constant="10" id="ffc-ga-cqj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zoi-r2-y1g" secondAttribute="trailing" constant="10" id="1Xh-QO-hd3"/>
+                    <constraint firstAttribute="bottom" secondItem="zoi-r2-y1g" secondAttribute="bottom" constant="7" id="Gx0-tl-Lag"/>
+                    <constraint firstItem="zoi-r2-y1g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NwR-1i-dVM"/>
+                    <constraint firstItem="zoi-r2-y1g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="uFw-hT-Aa8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="championshipImage" destination="hN1-JH-ACb" id="3CT-Lk-06q"/>
+                <outlet property="championshipLabel" destination="Ik8-sH-2En" id="jyB-Dy-DMO"/>
+                <outlet property="containerView" destination="zoi-r2-y1g" id="VXw-YT-vc1"/>
+                <outlet property="dateLabel" destination="j48-Hz-5BR" id="yrD-SB-28V"/>
+                <outlet property="participantsLabel" destination="iAj-M4-bB0" id="Oht-Kx-DhL"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="140.29017857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
